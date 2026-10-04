@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Party — Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+  <header class="site-header game-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>pixel<span class="brand-accent">party</span></span></a>
+    <div class="game-header-actions"><span class="points-pill">✦ <strong id="points-total">0</strong> pts</span><a class="back-link" href="index.html">← back to games</a></div>
+  </header>
+  <main class="game-layout">
+    <section class="game-stage" aria-label="Game area">
+      <div class="stage-heading"><div><p class="eyebrow" id="game-kicker">QUICK PLAY</p><h1 id="game-title">Pong</h1></div><div class="score-wrap"><span>SCORE</span><strong id="score">0 — 0</strong></div></div>
+      <div class="canvas-frame"><canvas id="game-canvas" width="720" height="480" aria-label="Game canvas"></canvas><div class="canvas-message" id="canvas-message"></div></div>
+      <div class="mobile-controls" id="mobile-controls" aria-label="Touch controls"></div>
+    </section>
+    <aside class="game-info">
+      <div class="info-label">HOW TO PLAY</div><p id="instructions">Move your paddle with W/S or the arrow keys. First to 7 wins.</p>
+      <div class="info-divider"></div><div class="next-piece-card"><div class="info-label">UP NEXT</div><canvas id="next-canvas" width="144" height="112" aria-label="Next Tetris piece"></canvas></div><div class="info-divider"></div><div class="info-label">QUICK KEYS</div><div class="key-row"><kbd>SPACE</kbd><span>pause / resume</span></div><div class="key-row"><kbd>R</kbd><span>restart</span></div>
+      <button class="button button-dark" id="restart-button">Restart game <span>↻</span></button>
+      <p class="exit-note">Done playing? Just close this tab.<br>Your score won’t follow you around.</p>
+    </aside>
+  </main>
+  <script src="points.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

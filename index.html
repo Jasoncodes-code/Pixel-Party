@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pixel Party is a quick-play arcade with free browser games and no login.">
+  <title>Pixel Party — quick games, no login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lobby-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pixel Party home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>pixel<span class="brand-accent">party</span></span>
+    </a>
+    <div class="header-note"><span class="status-dot"></span> no login · no downloads <span class="points-pill">✦ <strong id="points-total">0</strong> pts</span></div>
+  </header>
+
+  <main class="lobby-wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR 5-MINUTE BREAK STARTS HERE</p>
+        <h1 id="hero-title">Free<br><em>school games.</em></h1>
+        <p class="hero-text">Three classic games, one click away. No accounts, no setup, no awkward sign-out.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#games">Pick a game <span>↓</span></a>
+          <span class="shortcut-hint"><kbd>ESC</kbd> close a game tab</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="pixel-ball">●</div>
+        <div class="float-shape shape-square"></div>
+        <div class="float-shape shape-cross">+</div>
+        <span class="art-label label-top">READY?</span>
+        <span class="art-label label-bottom">LET'S PLAY</span>
+      </div>
+    </section>
+
+    <section class="games-section" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE LINEUP</p>
+          <h2 id="games-title">Choose your<br><span>kind of chaos.</span></h2>
+        </div>
+        <p class="section-aside">Each game opens in a<br>fresh tab. Your break,<br>your rules.</p>
+      </div>
+
+      <div class="game-grid">
+        <a class="game-card card-pong" href="game.html?game=pong" target="_blank" rel="noopener" aria-label="Open Pong in a new tab">
+          <div class="card-top"><span class="game-number">01</span><span class="play-icon">↗</span></div>
+          <div class="game-preview pong-preview"><span class="preview-paddle left"></span><span class="preview-ball"></span><span class="preview-paddle right"></span><span class="preview-line"></span></div>
+          <div class="card-copy"><h3>Pong</h3><p>Keep your cool. Keep the ball moving.</p><span class="card-cta">Play now <b>→</b></span></div>
+        </a>
+        <a class="game-card card-snake" href="game.html?game=snake" target="_blank" rel="noopener" aria-label="Open Snake in a new tab">
+          <div class="card-top"><span class="game-number">02</span><span class="play-icon">↗</span></div>
+          <div class="game-preview snake-preview"><span class="snake-body segment-1"></span><span class="snake-body segment-2"></span><span class="snake-body segment-3"></span><span class="snake-body segment-4"></span><span class="snake-body segment-5"></span><span class="snake-head"><i></i><i></i></span><span class="snake-food"></span></div>
+          <div class="card-copy"><h3>Snake</h3><p>One more bite. Then definitely stop.</p><span class="card-cta">Play now <b>→</b></span></div>
+        </a>
+        <a class="game-card card-tetris" href="game.html?game=tetris" target="_blank" rel="noopener" aria-label="Open Tetris in a new tab">
+          <div class="card-top"><span class="game-number">03</span><span class="play-icon">↗</span></div>
+          <div class="game-preview tetris-preview"><i class="block block-a"></i><i class="block block-b"></i><i class="block block-c"></i><i class="block block-d"></i><i class="block block-e"></i></div>
+          <div class="card-copy"><h3>Tetris</h3><p>Stack smart. Clear your head.</p><span class="card-cta">Play now <b>→</b></span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading shop-heading">
+        <div><p class="eyebrow">THE BREAK ROOM SHOP</p><h2 id="shop-title">Make it<br><span>yours.</span></h2></div>
+        <p class="section-aside">Earn points while you play.<br>Spend them on a little<br>extra personality.</p>
+      </div>
+      <div class="shop-grid">
+        <article class="shop-item shop-rainbow"><div class="shop-preview rainbow-preview">✦</div><div class="shop-item-copy"><div><h3>Rainbow snake</h3><p>A color-shifting skin for Snake.</p></div><div class="shop-buy-row"><span class="shop-cost">10 pts</span><button class="shop-button" data-item="snake-rainbow" data-cost="10">Buy</button></div></div></article>
+        <article class="shop-item shop-blue"><div class="shop-preview blue-preview"><i></i><i></i><i></i><i></i></div><div class="shop-item-copy"><div><h3>Blue blocks</h3><p>Make every Tetris block blue.</p></div><div class="shop-buy-row"><span class="shop-cost">5 pts</span><button class="shop-button" data-item="tetris-blue" data-cost="5">Buy</button></div></div></article>
+        <article class="shop-item shop-soccer"><div class="shop-preview soccer-preview">⚽</div><div class="shop-item-copy"><div><h3>Soccer ball</h3><p>Swap the Pong ball for a football.</p></div><div class="shop-buy-row"><span class="shop-cost">8 pts</span><button class="shop-button" data-item="pong-soccer" data-cost="8">Buy</button></div></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 PIXEL PARTY</span><span>MADE FOR SMALL BREAKS & BIG SCORES</span><span class="footer-spark">✦</span></footer>
+  <script src="points.js"></script>
+</body>
+</html>
